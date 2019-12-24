@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MangaUpdater", "MangaUpdater.csproj", "{39F2B164-ABB5-4D5E-8A91-66272970DE7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangaUpdater", "MangaUpdater.csproj", "{39F2B164-ABB5-4D5E-8A91-66272970DE7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E609C091-73FB-4A1C-9790-82C2A71AF44C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
