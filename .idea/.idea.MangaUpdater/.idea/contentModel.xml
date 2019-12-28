@@ -5,6 +5,7 @@
     <e p="C:\Users\Sirus\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Sirus\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_MangaUpdater.-712503655.00" t="ExcludeRecursive" />
     <e p="Y:\CODE\PERSO\MangaUpdater" t="IncludeRecursive">
+      <e p=".editorconfig" t="Include" />
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p=".gitattributes" t="Include" />
       <e p=".gitignore" t="Include" />
@@ -13,11 +14,119 @@
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
-      <e p="Data" t="Include">
-        <e p="WeatherForecast.cs" t="Include" />
-        <e p="WeatherForecastService.cs" t="Include" />
+      <e p="Context" t="Include">
+        <e p="ConfigurationContext.cs" t="Include" />
       </e>
-      <e p="Domain" t="Include" />
+      <e p="Controllers" t="Include" />
+      <e p="Domain" t="Include">
+        <e p="AniList" t="Include">
+          <e p="Airing" t="Include">
+            <e p="AniListAiringSchedule.cs" t="Include" />
+            <e p="AniListAiringScheduleConnection.cs" t="Include" />
+            <e p="AniListAiringScheduleEdge.cs" t="Include" />
+          </e>
+          <e p="AniListBaseName.cs" t="Include" />
+          <e p="AniListConnection.cs" t="Include" />
+          <e p="AniListEdge.cs" t="Include" />
+          <e p="AniListFavourites.cs" t="Include" />
+          <e p="AniListImage.cs" t="Include" />
+          <e p="AniListNotificationOption.cs" t="Include" />
+          <e p="AniListNotificationType.cs" t="Include" />
+          <e p="AniListPageInfo.cs" t="Include" />
+          <e p="AniListScoreDistribution.cs" t="Include" />
+          <e p="AniListScoreFormat.cs" t="Include" />
+          <e p="AniListStatusDistribution.cs" t="Include" />
+          <e p="Character" t="Include">
+            <e p="AniListCharacter.cs" t="Include" />
+            <e p="AniListCharacterConnection.cs" t="Include" />
+            <e p="AniListCharacterEdge.cs" t="Include" />
+            <e p="AniListCharacterImage.cs" t="Include" />
+            <e p="AniListCharacterName.cs" t="Include" />
+            <e p="AniListCharacterRole.cs" t="Include" />
+          </e>
+          <e p="Media" t="Include">
+            <e p="AniListMedia.cs" t="Include" />
+            <e p="AniListMediaConnection.cs" t="Include" />
+            <e p="AniListMediaCoverImage.cs" t="Include" />
+            <e p="AniListMediaEdge.cs" t="Include" />
+            <e p="AniListMediaExternalLink.cs" t="Include" />
+            <e p="AniListMediaList.cs" t="Include" />
+            <e p="AniListMediaListOptions.cs" t="Include" />
+            <e p="AniListMediaListTypeOptions.cs" t="Include" />
+            <e p="AniListMediaRank.cs" t="Include" />
+            <e p="AniListMediaStats.cs" t="Include" />
+            <e p="AniListMediaStreamingEpisode.cs" t="Include" />
+            <e p="AniListMediaTag.cs" t="Include" />
+            <e p="AniListMediaTitle.cs" t="Include" />
+            <e p="AniListMediaTrailer.cs" t="Include" />
+            <e p="AniListMediaTrend.cs" t="Include" />
+            <e p="AniListMediaTrendConnection.cs" t="Include" />
+            <e p="AniListMediaTrendEdge.cs" t="Include" />
+            <e p="Enums" t="Include">
+              <e p="AniListMediaFormat.cs" t="Include" />
+              <e p="AniListMediaListStatus.cs" t="Include" />
+              <e p="AniListMediaRankType.cs" t="Include" />
+              <e p="AniListMediaRelation.cs" t="Include" />
+              <e p="AniListMediaSeason.cs" t="Include" />
+              <e p="AniListMediaSource.cs" t="Include" />
+              <e p="AniListMediaStatus.cs" t="Include" />
+              <e p="AniListMediaType.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Recommendation" t="Include">
+            <e p="AniListRecommendation.cs" t="Include" />
+            <e p="AniListRecommendationConnection.cs" t="Include" />
+            <e p="AniListRecommendationEdge.cs" t="Include" />
+            <e p="AniListRecommendationRating.cs" t="Include" />
+          </e>
+          <e p="Review" t="Include">
+            <e p="AniListReview.cs" t="Include" />
+            <e p="AniListReviewConnection.cs" t="Include" />
+            <e p="AniListReviewEdge.cs" t="Include" />
+            <e p="AniListReviewRating.cs" t="Include" />
+          </e>
+          <e p="Staff" t="Include">
+            <e p="AniListStaff.cs" t="Include" />
+            <e p="AniListStaffConnection.cs" t="Include" />
+            <e p="AniListStaffEdge.cs" t="Include" />
+            <e p="AniListStaffImage.cs" t="Include" />
+            <e p="AniListStaffLanguage.cs" t="Include" />
+            <e p="AniListStaffName.cs" t="Include" />
+          </e>
+          <e p="Studio" t="Include">
+            <e p="AniListStudio.cs" t="Include" />
+            <e p="AniListStudioConnection.cs" t="Include" />
+            <e p="AniListStudioEdge.cs" t="Include" />
+          </e>
+          <e p="User" t="Include">
+            <e p="AniListUser.cs" t="Include" />
+            <e p="AniListUserAvatar.cs" t="Include" />
+            <e p="AniListUserOptions.cs" t="Include" />
+            <e p="AniListUserTitleLanguage.cs" t="Include" />
+            <e p="UserStatistics" t="Include">
+              <e p="AniListUserBaseStatistic.cs" t="Include" />
+              <e p="AniListUserCountryStatistic.cs" t="Include" />
+              <e p="AniListUserFormatStatistic.cs" t="Include" />
+              <e p="AniListUserGenreStatistic.cs" t="Include" />
+              <e p="AniListUserLengthStatistic.cs" t="Include" />
+              <e p="AniListUserReleaseYearStatistic.cs" t="Include" />
+              <e p="AniListUserScoreStatistic.cs" t="Include" />
+              <e p="AniListUserStaffStatistic.cs" t="Include" />
+              <e p="AniListUserStartYearStatistic.cs" t="Include" />
+              <e p="AniListUserStatisticTypes.cs" t="Include" />
+              <e p="AniListUserStatusStatistic.cs" t="Include" />
+              <e p="AniListUserStudioStatistic.cs" t="Include" />
+              <e p="AniListUserTagStatistic.cs" t="Include" />
+              <e p="AniListUserVoiceActorStatistic.cs" t="Include" />
+              <e p="AnimeListUserStatistics.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Common" t="Include">
+          <e p="DataProvider.cs" t="Include" />
+          <e p="Media.cs" t="Include" />
+        </e>
+      </e>
       <e p="electron.manifest.json" t="Include" />
       <e p="MangaUpdater.csproj" t="IncludeRecursive" />
       <e p="MangaUpdater.sln" t="IncludeFlat" />
@@ -41,12 +150,23 @@
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
       </e>
-      <e p="Services" t="Include" />
+      <e p="Repositories" t="Include">
+        <e p="AniListRepository.cs" t="Include" />
+        <e p="IAniListRepository.cs" t="Include" />
+      </e>
+      <e p="Services" t="Include">
+        <e p="IMediaService.cs" t="Include" />
+        <e p="MediaService.cs" t="Include" />
+      </e>
       <e p="Shared" t="Include">
         <e p="MainLayout.razor" t="Include" />
         <e p="NavMenu.razor" t="Include" />
       </e>
+      <e p="Solution Items" t="Include" />
       <e p="Startup.cs" t="Include" />
+      <e p="Utils" t="Include">
+        <e p="JsonUtils.cs" t="Include" />
+      </e>
       <e p="wwwroot" t="Include">
         <e p="css" t="Include">
           <e p="bootstrap" t="Include">

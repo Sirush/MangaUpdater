@@ -2,6 +2,6 @@
 {
     public class AniListUserCountryStatistic : AniListUserBaseStatistic
     {
-        public AniListCountryCode? Country { get; set; }
+        public string? Country { get; set; }
     }
 }

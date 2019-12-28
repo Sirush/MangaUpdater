@@ -4,7 +4,7 @@
     {
         Finished = 1,
         Releasing = 2,
-        Not_Yet_Release = 3,
+        Not_Yet_Released = 3,
         Cancelled = 4
     }
 }

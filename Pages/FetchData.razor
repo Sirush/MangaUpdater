@@ -1,46 +1,71 @@
 ﻿@page "/fetchdata"
 
-@using MangaUpdater.Data
-@inject WeatherForecastService ForecastService
+@using MangaUpdater.Domain.Common
+@using MangaUpdater.Services
+@inject IMediaService MediaService
 
-<h1>Weather forecast</h1>
+<h1>Media List</h1>
 
-<p>This component demonstrates fetching data from a service.</p>
+<p>Search</p>
 
-@if (forecasts == null)
+<input @bind-value="Search" @bind-value:event="onchange" />
+
+@if (_medias == null)
 {
-    <p><em>Loading...</em></p>
+    <p>
+        <em>Loading...</em>
+    </p>
 }
 else
 {
     <table class="table">
         <thead>
-            <tr>
-                <th>Date</th>
-                <th>Temp. (C)</th>
-                <th>Temp. (F)</th>
-                <th>Summary</th>
-            </tr>
+        <tr>
+            <th>AniList ID</th>
+            <th>English Title</th>
+            <th>Romaji Title</th>
+            <th>Native Title</th>
+        </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
-            {
-                <tr>
-                    <td>@forecast.Date.ToShortDateString()</td>
-                    <td>@forecast.TemperatureC</td>
-                    <td>@forecast.TemperatureF</td>
-                    <td>@forecast.Summary</td>
-                </tr>
-            }
+        @foreach (var media in _medias)
+        {
+            <tr>
+                <td>@media.AniListId</td>
+                <td>@media.TitleEnglish</td>
+                <td>@media.TitleRomaji</td>
+                <td>@media.TitleNative</td>
+            </tr>
+        }
         </tbody>
     </table>
 }
 
 @code {
-    private WeatherForecast[] forecasts;
+    private List<Media> _medias;
+
+    protected string Search
+    {
+        get { return _search; }
+        set
+        {
+            _search = value;
+            SearchMedia(value);
+
+        }
+    }
+
+    private string _search;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+
     }
+
+
+    protected async void SearchMedia(string name)
+    {
+        _medias = await MediaService.GetMediasByName(name);
+    }
+
 }

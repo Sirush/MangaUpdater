@@ -8,4 +8,4 @@
         public int? LastPage { get; set; }
         public bool? HasNextPage { get; set; }
     }
-}Y:\CODE\PERSO\MangaUpdater\Domain\AniList\Image\AniListUserAvatar.cs
+}

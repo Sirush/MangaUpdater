@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MangaUpdater.Domain.Common;
 
 namespace MangaUpdater.Domain.AniList
 {
     public class AniListMedia
     {
-        public uint Id { get; set; }
+        public int Id { get; set; }
 
         public uint? IdMal { get; set; }
 
@@ -70,5 +71,16 @@ namespace MangaUpdater.Domain.AniList
         public bool? AutoCreateForumThread { get; set; }
         public bool? IsRecommendationBlocked { get; set; }
         public string? ModNotes { get; set; }
+
+        public Media ToMedia()
+        {
+            return new Media
+            {
+                AniListId = Id,
+                TitleEnglish = Title?.English,
+                TitleNative = Title?.Native,
+                TitleRomaji = Title?.Romaji
+            };
+        }
     }
 }

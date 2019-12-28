@@ -5,8 +5,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Carlabs.Getit" Version="2.1822.0" />
     <PackageReference Include="ElectronNET.API" Version="7.30.2" />
-    <PackageReference Include="GraphQL" Version="3.0.0-preview-1352" />
     <PackageReference Include="Microsoft.AspNetCore.Blazor.Server" Version="3.1.0-preview4.19579.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.2.0" />
   </ItemGroup>
@@ -17,6 +17,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
